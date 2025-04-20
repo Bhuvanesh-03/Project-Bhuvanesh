@@ -1,0 +1,73 @@
+.scrollable-dropdown {
+    max-height: 150px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+.pill-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #f3f2f2;
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+
+.pill-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.slds-pill__label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+
+.pill-remove {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* link related */
+
+/* Compact, space-saving styles */
+.link-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px; /* reduced gap */
+    padding: 4px;
+    margin: 0;
+}
+
+.link-item {
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 6px; /* smaller padding */
+    margin: 2px; /* reduced margin */
+    font-size: 0.75rem;
+    max-width: 120px;
+    max-height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    color: #0070d2;
+}
+
+.link-item:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}

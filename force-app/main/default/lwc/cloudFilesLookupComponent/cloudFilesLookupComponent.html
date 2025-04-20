@@ -1,0 +1,57 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label">{label}</label>
+        <div class="slds-combobox_container">
+            <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                <template if:true={selectedAccount}>
+                    <div class="slds-pill_container pill-flex">
+                        <div class="pill-content">
+                            <lightning-icon icon-name="standard:account" size="x-small" class="slds-pill__icon"></lightning-icon>
+                            <span class="slds-pill__label full-width">{selectedAccount.Name}</span>
+                        </div>
+                        <button class="slds-button slds-button_icon slds-pill__remove pill-remove" onclick={handleRemoveSelection}>
+                            <lightning-icon icon-name="utility:close" size="x-small"></lightning-icon>
+                        </button>
+                    </div>
+                </template>
+                <template if:false={selectedAccount}>
+                    <lightning-input type="text" value={searchTerm} onchange={handleInputChange} onblur={handleInputBlur} class="lookup-input">
+                    </lightning-input>
+                </template>
+                <template if:true={filteredAccounts.length}>
+                    <template if:true={displayAsHyperLink}>
+                        <div class="link-column">
+                            <template for:each={filteredAccounts} for:item="acc">
+                                <a 
+                                key={acc.Id}
+                                href={acc.recordLink}
+                                target="_blank"
+                                class="link-item"
+                                title={acc.Name}
+                                data-id={acc.Id}
+                                onclick={handleClick}>
+                                {acc.Name}
+                            </a>
+                            </template>
+                        </div>
+                    </template>
+                    <template if:false={displayAsHyperLink}>
+                        <div class={dropdownClass} style={dropdownStyle}>
+                            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                <template for:each={filteredAccounts} for:item="acc">
+                                    <li key={acc.Id} data-id={acc.Id} class="slds-listbox__item" onclick={handleSelect}>
+                                        <div class="slds-media slds-listbox__option slds-listbox__option_entity">
+                                            <span class="slds-media__body">
+                                                <span class="slds-listbox__option-text">{acc.Name}</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

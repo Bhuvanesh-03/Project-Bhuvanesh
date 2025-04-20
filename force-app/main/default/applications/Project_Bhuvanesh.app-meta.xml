@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Project_Bhuvanesh_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>Salesforce_image</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Project - Bhuvanesh</label>
+    <navType>Standard</navType>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-home</tabs>
+    <tabs>Sales_Order__c</tabs>
+    <tabs>Work_Order__c</tabs>
+    <tabs>Purchase_Order__c</tabs>
+    <tabs>Customer__c</tabs>
+    <tabs>Labour__c</tabs>
+    <tabs>Vendor__c</tabs>
+    <tabs>Labour_Rate__c</tabs>
+    <tabs>Product__c</tabs>
+    <tabs>Inventory__c</tabs>
+    <tabs>Inventory_Location__c</tabs>
+    <tabs>Product_cost__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Project_Bhuvanesh_UtilityBar</utilityBar>
+</CustomApplication>

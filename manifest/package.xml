@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+        <members>Project_Bhuvanesh</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>LookupController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Customer__c</members>
+        <members>Inventory_Location__c</members>
+        <members>Inventory__c</members>
+        <members>Labour_Rate__c</members>
+        <members>Labour__c</members>
+        <members>Product__c</members>
+        <members>Product_cost__c</members>
+        <members>Sales_Order__c</members>
+        <members>Vendor__c</members>
+        <members>Work_Order__c</members>
+        <members>Purchase_Order__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Customer__c</members>
+        <members>Inventory_Location__c</members>
+        <members>Inventory__c</members>
+        <members>Labour_Rate__c</members>
+        <members>Labour__c</members>
+        <members>Product__c</members>
+        <members>Product_cost__c</members>
+        <members>Purchase_Order__c</members>
+        <members>Sales_Order__c</members>
+        <members>Vendor__c</members>
+        <members>Work_Order__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Project_Bhuvanesh_Home_Page</members>
+        <members>Project_Bhuvanesh_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <types>
+        <members>Customer__c-Customer Layout</members>
+        <members>Inventory_Location__c-Inventory Location Layout</members>
+        <members>Inventory__c-Inventory Layout</members>
+        <members>Labour_Rate__c-Labour Rate Layout</members>
+        <members>Labour__c-Labour Layout</members>
+        <members>Product__c-Product Layout</members>
+        <members>Product_cost__c-Product cost Layout</members>
+        <members>Purchase_Order__c-Purchase Order Layout</members>
+        <members>Sales_Order__c-Sales Order Layout</members>
+        <members>Vendor__c-Vendor Layout</members>
+        <members>Work_Order__c-Work Order Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>cloudFilesLookupComponent</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Customer__c</members>
+        <members>Inventory_Location__c</members>
+        <members>Inventory__c</members>
+        <members>Labour_Rate__c</members>
+        <members>Labour__c</members>
+        <members>Product__c</members>
+        <members>Product_cost__c</members>
+        <members>Purchase_Order__c</members>
+        <members>Sales_Order__c</members>
+        <members>Vendor__c</members>
+        <members>Work_Order__c</members>
+        <name>SharingRules</name>
+    </types>
+    <version>63.0</version>
+</Package>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+  <masterLabel>Cloud Files Lookup Component</masterLabel>
+  <description>This lwc is available in flows.</description>
+  <targets>
+    <target>lightning__FlowScreen</target>
+</targets>
+<targetConfigs>
+    <targetConfig targets="lightning__FlowScreen">
+        <!-- Input variables -->
+        <property name="accountIds" type="String[]" label="Account Ids" description="Ids of the Accounts" role="inputOnly"/>
+        <property name="label" type="String" label="Label" description="Label of the component" role="inputOnly"/>
+        
+        <!-- Output variables -->
+        <property name="selectedAccountId" type="String" label="Selected Account Id" description="Selected Account Id" role="outputOnly"/>
+    </targetConfig>
+</targetConfigs>
+</LightningComponentBundle>
